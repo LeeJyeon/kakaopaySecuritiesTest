@@ -11,29 +11,12 @@
 
 ## 빌드 및 실행 방법
 
-0. 인메모리 설정
+1. 인메모리 설정
 
 		url: jdbc:h2:tcp://localhost/~/kakaosecurities
 
 		username: sa
 
-
-1. 인메모리 DB 에 csv file upload 필수!
-
-      Post Request ( localhost:8080/ )
-
-      Body ( csv 파일 경로 매핑 필요 * 테스트코드는 상대경로로 파일경로 매핑 완료 )
-
-      Example )
-			
-		{
-		 "filePath1" : "/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_거래내역.csv",
-		 "filePath2" : "/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_계좌정보.csv",
-		 "filePath3" : "/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_관리점정보.csv" 
-		}
-	
-
-	
 
 2. 문제 1~4 : Get Request ( localhost:8080/problem1 ~ localhost:8080/problem4 )
 
