@@ -34,10 +34,9 @@ public class DealHistoryRepositoryTest {
 
     @Before
     public void preparation() throws IOException {
-        insertAllDataService.insertAccountMaster("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_계좌정보.csv");
-        insertAllDataService.insertBranch("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_관리점정보.csv");
-        insertAllDataService.insertDealHistory("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_거래내역.csv");
-
+        insertAllDataService.insertAccountMaster("src/main/resources/file/과제1_데이터_계좌정보.csv");
+        insertAllDataService.insertBranch("src/main/resources/file/과제1_데이터_관리점정보.csv");
+        insertAllDataService.insertDealHistory("src/main/resources/file/과제1_데이터_거래내역.csv");
     }
 
 

@@ -39,13 +39,13 @@ public class InsertAllDataServiceTest {
     @Test
     @Commit
     public void testInsertNumber() throws IOException {
-        insertAllDataService.insertAccountMaster("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_계좌정보.csv");
+
+        insertAllDataService.insertAccountMaster("src/main/resources/file/과제1_데이터_계좌정보.csv");
+        insertAllDataService.insertBranch("src/main/resources/file/과제1_데이터_관리점정보.csv");
+        insertAllDataService.insertDealHistory("src/main/resources/file/과제1_데이터_거래내역.csv");
+
         assertThat( accountMasterRepository.count() ).isEqualTo( 11 );
-
-        insertAllDataService.insertBranch("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_관리점정보.csv");
         assertThat( branchRepository.count() ).isEqualTo( 5 );
-
-        insertAllDataService.insertDealHistory("/Users/jihyunlee/Desktop/testprogram/file/과제1_데이터_거래내역.csv");
         assertThat(dealHistoryRepository.count()).isEqualTo(102);
     }
 
