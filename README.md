@@ -20,7 +20,7 @@
 
 1. 인메모리 DB 에 csv file upload 필수!
 
-      Put Request ( localhost:8080/ )
+      Post Request ( localhost:8080/ )
 
       Body ( csv 파일 경로 매핑 필요 * 테스트코드는 상대경로로 파일경로 매핑 완료 )
 
